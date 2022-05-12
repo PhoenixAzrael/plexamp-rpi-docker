@@ -1,11 +1,11 @@
-FROM node:9-stretch
+FROM node:12
 
 RUN apt-get update && apt-get install -y libasound2 && \
   rm -rf /var/lib/apt/lists/*
 
-RUN wget --no-verbose https://files.plexapp.com/elan/Plexamp-v2.0.0-rPi-beta.2.tar.bz2 && \
-  tar xjf Plexamp-v2.0.0-rPi-beta.2.tar.bz2 -C /root && \
-  rm Plexamp-v2.0.0-rPi-beta.2.tar.bz2
+RUN wget --no-verbose https://plexamp.plex.tv/headless/Plexamp-Linux-arm64-v4.2.2-beta.5.tar.bz2 && \
+  tar xjf Plexamp-Linux-arm64-v4.2.2-beta.5.tar.bz2 -C /root && \
+  rm Plexamp-Linux-arm64-v4.2.2-beta.5.tar.bz2
 
 ENV LD_LIBRARY_PATH /root/plexamp/resources/helpers/linux-arm
 ENV LD_LIBRARY_PATH /root/plexamp/server/node_modules/treble/build/Release/
