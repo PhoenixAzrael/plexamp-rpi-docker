@@ -11,5 +11,5 @@ ENV LD_LIBRARY_PATH /root/plexamp/resources/helpers/linux-arm
 ENV LD_LIBRARY_PATH /root/plexamp/server/node_modules/treble/build/Release/
 ENV PLUGIN_PATH /root/plexamp/server/node_modules/treble/build/Release/
 
-EXPOSE 20000
-ENTRYPOINT ["node", "/root/plexamp/server/server.prod.js"]
+EXPOSE 32500
+ENTRYPOINT ["node", "/root/plexamp/js/index.js"]
