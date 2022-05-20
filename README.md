@@ -1,10 +1,14 @@
 Based on <https://forums.plex.tv/t/suggestions-for-the-future-headless-rpi-support/218187/161>.
+Additional work had to be done for:
+https://forums.plex.tv/t/plexamp-on-the-raspberry-pi/791500/9
 
-Get a server.json file from existing Plexamp on desktop install and place it at the root of this repo.
+server.json file not necessary anymore!
 
 ```
-docker build -t plexamp:2.0.0-b2 .
+docker build -t plexamp:4.2.2-b5 .
 docker-compose up -d
 ```
 
-PS: Sign out and back into your existing install to get a new identifier/token for Plexamp desktop.
+Only if someone could provide me with 32bit builds so I can use this container on my hifiberry build :-(
+
+All other: Have fun - enjoy PLEXAMP!
