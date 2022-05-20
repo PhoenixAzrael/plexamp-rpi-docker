@@ -9,6 +9,6 @@ docker build -t plexamp:4.2.2-b5 .
 docker-compose up -d
 ```
 
-Only if someone could provide me with 32bit builds so I can use this container on my hifiberry build :-(
+Only if someone could provide me with 32bit builds of plexamp (Elan can you hear me?) so I can use this container on my hifiberry build :-(
 
 All other: Have fun - enjoy PLEXAMP!
